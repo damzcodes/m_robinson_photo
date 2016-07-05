@@ -1,0 +1,48 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+$white: #fff;
+
+.home-tile{
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#one{
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/13147601_233065193716959_9217939701128121944_o.jpg");
+  @include background;
+}
+
+#two{
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/12400840_10153354127157916_456505971681053818_n.jpg?oh=1eb58e6c2e2ad8d6c0c00d7d23747afe&oe=57E177D3");
+  @include background;
+}
+
+#three{
+  background-image: url("https://scontent-cdg2-1.xx.fbcdn.net/t31.0-8/10572243_174863046203841_1931983257509798537_o.jpg");
+  @include background;
+}
+
+.enter {
+  position: fixed;
+  top: 50vh;
+  right: 60vw;
+  color: $white;
+  font-size: 4rem;
+}
+
+.enter:hover {
+  text-decoration: none;
+  color: $white;
+  opacity: .5;
+}
+
+.enter:focus {
+  @extend .enter:hover;
+}

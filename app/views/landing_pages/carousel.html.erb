@@ -1,0 +1,23 @@
+
+<div class="owl-carousel">
+  <div class="home-tile" id="one">  </div>
+  <div class="home-tile" id="two"></div>
+  <div class="home-tile" id="three"> <a class="enter fadeUp" href=""> Enter </a> </div>
+</div>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	loop:false,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    animateIn: 'fadeInRight',
+    animateOut: 'fadeOutLeft',
+  	items:1
+  });
+});
+</script>
