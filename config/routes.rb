@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'landing_pages#carousel'
 
   resource :admin_dashboard
+  resources :galleries
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
