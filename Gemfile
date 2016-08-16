@@ -6,6 +6,8 @@ gem 'sqlite3'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'rubocop', '~> 0.41.1'
+gem 'devise'
+gem 'coffee-rails'
 
 group :test do
   gem 'brakeman'                  # Always latest
