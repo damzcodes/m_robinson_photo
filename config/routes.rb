@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'landing_pages#carousel'
 
   resources :pages, only: :show
+  resources :images, only: :new
 
   scope :admin do
     devise_for :users, controllers: { sessions: 'users/sessions' }

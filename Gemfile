@@ -8,6 +8,7 @@ gem 'turbolinks'
 gem 'rubocop', '~> 0.41.1'
 gem 'devise'
 gem 'coffee-rails'
+gem "paperclip", "~> 5.0.0"
 
 group :test do
   gem 'brakeman'                  # Always latest
