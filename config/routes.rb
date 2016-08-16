@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   resource :admin_dashboard
   resources :galleries
+  resources :pages
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
