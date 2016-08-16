@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
-  devise_for :users, controllers: { sessions: 'users/sessions' }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   root 'landing_pages#carousel'
 
-  resource :admin_dashboard
-  resources :galleries
-  resources :pages
+  resources :pages, only: :show
+
+  scope :admin do
+    devise_for :users, controllers: { sessions: 'users/sessions' }
+    get 'dashboard' => 'admin_dashboards#show', as: :admin_dashboard
+    resources :galleries
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
