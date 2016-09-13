@@ -1,0 +1,11 @@
+<%= form_for(@image) do |f| %>
+  <div class="field">
+    <%= f.label :image %><br />
+    <%= f.file_field :image, autofocus: true %>
+    <%= @image.errors[:image] %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
